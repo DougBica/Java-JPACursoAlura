@@ -26,7 +26,7 @@ public class TesteBuscaConta {
 		EntityManager em2 = new JPAUtil().getEntityManager();
 		
 		em2.getTransaction().begin();
-		//estado DETACHED ,não é sincronizada agora, mas ja foi
+		//estado DETACHED ,não é anexada agora, mas ja foi
 		//estava sob os cuidados de em, após o fechamento de em se tornou detached.
 		conta.setTitular("Douglas");
 		
